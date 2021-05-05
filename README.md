@@ -1,19 +1,19 @@
 # Overview
 
-Lightweight docker image built on top of **alpine:3.10** with installed AVR toolchain and few additional tools:
+Docker image built on top of **rust:latest** with installed AVR toolchain and few additional tools:
 * AVR8 toolchain (2019, AVR_8_bit_GNU_Toolchain_3.6.2_1759)
-* avrdude (v6.3)
-* make (v4.2)
-* cmake (v3.14)
+* Python 3 w/ intelhex library
+* Rust (from rust:latest base)
 
-DockerHub: https://hub.docker.com/r/lpodkalicki/avr-toolchain
+
+DockerHub: https://hub.docker.com/r/sytedev/avr-toolchain
 
 ## Building image locally
 
 ```bash
-git clone git@github.com:lpodkalicki/avr-toolchain-docker.git
+git clone git@github.com:/avr-toolchain-docker.git
 cd avr-toolchain
-docker build --rm -t lpodkalicki/avr-toolchain:latest .
+docker build --rm -t sytedev/avr-toolchain:latest .
 ```
 
 ## An example of running toolchain binary
