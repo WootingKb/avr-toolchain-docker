@@ -4,7 +4,7 @@ Docker image built on top of **rust:latest** with installed AVR toolchain and fe
 * AVR8 toolchain (2019, AVR_8_bit_GNU_Toolchain_3.6.2_1759)
 * Python 3 w/ intelhex library
 * Rust (from rust:latest base)
-
+* Meson & Ninja build tools
 
 DockerHub: https://hub.docker.com/r/sytedev/avr-toolchain
 

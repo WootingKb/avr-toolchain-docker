@@ -12,7 +12,7 @@ WORKDIR ${TOOLS_PATH}
 
 RUN apt update && apt install -y libusb-1.0-0 libusb-1.0-0-dev libudev-dev python3-pip 
 
-RUN pip3 install intelhex
+RUN pip3 install intelhex meson ninja
 
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 
